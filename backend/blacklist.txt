@@ -1,0 +1,4 @@
+malicious.com
+phishingsite.net
+scam.com
+example-bad.tk

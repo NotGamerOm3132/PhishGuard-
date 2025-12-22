@@ -1,0 +1,155 @@
+:root {
+    --bg: #f8f9fa;
+    --card: #ffffff;
+    --accent: #4d7cfe;
+    --accent-glow: rgba(77, 124, 254, 0.3);
+    --text: #212529;
+    --text-muted: #6c757d;
+    --danger: #dc3545;
+    --safe: #28a745;
+    --border: #dee2e6;
+    --radius: 12px;
+    --transition: 0.25s ease;
+}
+/* LIGHT THEME NAVBAR GRADIENT */
+.light .navbar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+
+    background: linear-gradient(
+        90deg,
+        #ff7b7b,
+        #ffd45e,
+        #7cd6ff,
+        #a57bff,
+        #ff7b7b
+    );
+
+    background-size: 400% 100%;
+    animation: lightGlow 6s linear infinite;
+    opacity: 1;
+}
+
+@keyframes lightGlow {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 0%; }
+    100% { background-position: 0% 0%; }
+}
+/* ------------------------------
+   Animated gradient hr (robust)
+   ------------------------------ */
+.glow-line {
+  /* reset default hr rendering */
+  border: 0;
+  background: transparent;
+  height: 6px;            /* visible thickness */
+  margin: 36px 0 24px 0;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+
+/* Use a pseudo-element for the animated gradient background.
+   This is less likely to be overridden by user-agent hr rules. */
+.glow-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    #ff006a 0%,
+    #ff9100 25%,
+    #00c3ff 50%,
+    #7b00ff 75%,
+    #ff006a 100%
+  );
+  background-size: 300% 100%;
+  animation: glowMove 6s linear infinite;
+  /* subtle blend so it doesn't clash with light backgrounds */
+  mix-blend-mode: normal;
+  opacity: 0.95;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12); /* tiny depth */
+  pointer-events: none;
+}
+
+/* animation */
+@keyframes glowMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Optional: if you want a slightly different appearance
+   in the light theme, you can override using .light on body */
+.light .glow-line::before {
+  opacity: 1; /* slightly brighter on light background */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+
+/* Use same classes as dark theme, colors updated */
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+}
+
+.navbar {
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-item {
+    color: var(--text-muted);
+}
+
+.nav-item:hover,
+.nav-item.active {
+    background: var(--accent);
+    color: #fff;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+button,
+.btn {
+    background: var(--accent);  
+    color: white;
+}
+
+input {
+    background: #ffffff;
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+table thead {
+    background: #e9ecef;
+    color: var(--text);
+}
+
+table tr:hover {
+    background: #f2f1f5;
+}
+
+#analysis-result {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.footer {
+    color: var(--text-muted);
+}

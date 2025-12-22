@@ -1,0 +1,11 @@
+Safe Test Links (intentionally look slightly suspicious but are NOT
+phishing):
+
+1.  http://mywebsite.org/account/verify-test             60
+2.  http://sample-domain.net/security-update-info           70
+3.  http://trustedsite.io/user-session-check             80
+4.  http://testsafe.xyz/verify-profile                  70
+5.  http://example.com/security-login-update?session=verify_user_2025           50
+6.  http://mydomain.net/secureuser-update/verify-account                   40
+
+These links are harmless and only for PhishGuard low‑score testing.

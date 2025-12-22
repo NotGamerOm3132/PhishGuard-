@@ -1,0 +1,28 @@
+Phishguard+
+Got phished? Don't Worry! you got a guard Now!!!
+
+THE PROTOCOL :-
+
+We will have 3 tabs or pages you may say which would be as follows:-
+1. Dashboard
+2. Threats
+3. Scanner
+
+In the header we would have the Name Phishguard+ with the logo and a status that shows if the guard is online or not.It would also contain the Navbar with HOME, ABOUT, and CONTACT US.
+
+Dashboard:-
+
+The Dashboard section would contain some basic information about your system or browser (depends if we make a website a software or a extension). Mainly containing the Safety Score, Active 
+Threats, Last Scanned, And the Recent Threats.
+
+Threats:-
+
+It would show the previous and the current threats. The area where we would see the threats we would get a status which shows the criticality of the threat (risk score of the website, is 
+HTTPS there or not etc.)
+
+Scanner:-
+
+It would get a textbox in which when the user would enter a link and would give the input if the URL is safe or not.
+
+
+We would have footer in every section and we will figure out what to put innit.
